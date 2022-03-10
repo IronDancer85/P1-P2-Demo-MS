@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "k8s-security-group" {
-  name2        = "md-k8s-security-group"
+  name        = "md-k8s-security-group"
   description = "allow all internal traffic, ssh, http from anywhere"
   ingress {
     from_port   = 0
